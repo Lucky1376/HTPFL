@@ -15,6 +15,7 @@ def Banner():
 	print(colored("     #################################", "yellow"))
 	print(r1,nt,r2)
 	print(colored("     #################################", "yellow"))
+	print(colored("                For Android", "green"))
 	print("")
 	ist = (colored("[1]", "red"))
 	ist3 = (colored("Sms Bomber", "green"))
@@ -24,8 +25,12 @@ def Banner():
 	fah2 = (colored("VPN For Termux", "blue"))
 	print(fah, fah2)
 	print("")
+	pas = (colored("[3]", "red"))
+	pas2 = (colored("Password Generator", "magenta"))
+	print(pas, pas2)
+	print("")
 	ksy = colored("[99]", "red")
-	ksy2 = colored("О программе", "cyan")
+	ksy2 = colored("О Программе", "cyan")
 	print(ksy, ksy2)
 	print("")
 	print("")
@@ -241,7 +246,38 @@ def Bomb():
 				os.system("clear")
 				Banner()
 				osnova()
-
+				
+def Password():
+	print("")
+	pas = (colored("[1]", "cyan"))
+	pas2 = (colored("start", "green"))
+	print(pas, pas2)
+	print("")
+	print("")
+	jsh = colored("[0]", "red")
+	print(jsh, hsg)
+	print("")
+	Pas = input(colored(" —>> ", "red"))
+	if Pas == "1" or Pas == "start":
+		chars = "+-/*!&$#?=@<>abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+		print("")
+		numb = int(input(colored("Количество Паролей: ", "yellow")))
+		len = int(input(colored("Длина Пароля(ей): ", "yellow")))
+		numb = int(numb)
+		len = int(len)
+		for n in range(numb):
+			password = " "
+			for i in range(len):
+				password += choice(chars)
+			print("")
+			rez1 = ("Рузультат:")
+			print(colored(rez1,"red"),colored(password,"blue"))
+			print("")
+	elif Pas == "0" or Pas == "Назад":
+		while True:
+			os.system("clear")
+			Banner()
+			osnova()
 
 #Ядро Кода
 def  osnova():
@@ -323,12 +359,18 @@ def  osnova():
 				os.system("clear")
 				Banner()
 				osnova()
+	elif numb == "3" or numb == "Password Generator":
+		while True:
+			Password()
 	elif numb == "99" or numb == "О программе":
 		print("")
 		name = colored("Lucky", "red")
 		raz = colored("Разработчик -", "cyan")
 		print(raz, name)
-		vr = colored("0.2.6", "blue")
+		ja = colored("OS -", "cyan")
+		ja2 = colored("Android", "green")
+		print(ja, ja2)
+		vr = colored("0.3.7https://github.com/Lucky1376/HTPFL", "blue")
 		ver = colored("Version -", "cyan")
 		print(ver, vr)
 		lang = colored("Python", "green")
