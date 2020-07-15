@@ -1,2 +1,4 @@
 # HTPFL
-HTPFL - Hack The Panel From Lucky
+HTPFL - Hacker The Panel From Lucky
+
+Установка: СКОРО
