@@ -40,7 +40,7 @@ def Banner():
 	print("")
 	print("")
 	upd = colored("[Upd]", "red")
-	upd2 = colored("Обновить", "green")
+	upd2 = colored("Обновить Панель", "green")
 	print(upd, upd2)
 	istD = (colored("[0]", "red"))
 	istD2 = (colored("Выход", "red"))
