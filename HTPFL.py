@@ -357,7 +357,7 @@ elif numb == "99" or numb == "О программе":
 	ja = colored("OS -", "cyan")
 	ja2 = colored("Android", "green")
 	print(ja, ja2)
-	vr = colored("0.3.7", "blue")
+	vr = colored("0.3.9", "blue")
 	ver = colored("Version -", "cyan")
 	print(ver, vr)
 	lang = colored("Python", "green")
