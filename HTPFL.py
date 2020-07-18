@@ -170,9 +170,7 @@ def  osnova():
 		print("")
 		upd = input(colored(" —>> ", "red"))
 		if upd == "1" or upd == "start":
-			os.system("rm -rf HTPFL.py")
-			os.system("git clone https://github.com/Lucky1376/HTPFL")
-			os.system("python HTPFL.py")
+			os.system("cd && rm -rf HTPFL && git clone https://github.com/Lucky1376/HTPFL && cd HTPFL && python HTPFL.py)
 		elif upd == "0" or upd == "Назад":
 			while True:
 				Banner()
@@ -339,11 +337,10 @@ elif numb == "Upd" or numb == "upd" or numb == "Обновить":
 		print("")
 		upd = input(colored(" —>> ", "red"))
 		if upd == "1" or upd == "start":
-			os.system("rm -rf HTPFL.py")
-			os.system("git clone https://github.com/Lucky1376/HTPFL")
-			os.system("python HTPFL.py")
+			os.system("cd && rm -rf HTPFL && git clone https://github.com/Lucky1376/HTPFL && cd HTPFL && python HTPFL.py")
 		elif upd == "0" or upd == "Назад":
 			while True:
+				os.system("clear")
 				Banner()
 				osnova()
 		else:
