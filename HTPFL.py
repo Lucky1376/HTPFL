@@ -25,11 +25,7 @@ def Banner():
 	fah2 = (colored("VPN For Termux", "blue"))
 	print(fah, fah2)
 	print("")
-	pas = (colored("[3]", "red"))
-	pas2 = (colored("Password Generator", "magenta"))
-	print(pas, pas2)
-	print("")
-	psh = colored("[4]", "red")
+	psh = colored("[3]", "red")
 	psh2 = colored("DDOS", "magenta")
 	psh3 = colored("For Wi-Fi", "cyan")
 	print(psh, psh2, psh3)
@@ -40,7 +36,7 @@ def Banner():
 	print("")
 	print("")
 	upd = colored("[Upd]", "red")
-	upd2 = colored("Обновить Панель", "green")
+	upd2 = colored("Обновить", "green")
 	print(upd, upd2)
 	istD = (colored("[0]", "red"))
 	istD2 = (colored("Выход", "red"))
@@ -139,16 +135,7 @@ def  osnova():
 				os.system("clear")
 				Banner()
 				osnova()
-	elif numb == "3" or numb == "Ddos for Wi-Fi":
-		print("")
-		print(colored("Идет обновление...", "green"))
-		print("")
-		sleep(1.1)
-		os.system("clear")
-		while True:
-			Banner()
-			osnova()
-	elif numb == "4" or numb == "Ddos For Wi-Fi":
+	elif numb == "3" or numb == "Ddos For Wi-Fi":
 		print("")
 		print(colored("В разработке...", "green"))
 		print("")
@@ -306,16 +293,7 @@ if numb == "1" or numb =="Sms Bomber":
 elif numb == "2" or numb == "VPN For Termux":
 	while True:
 		RVpn()
-elif numb == "3" or numb == "Password Generator":
-	print("")
-	print(colored("Идет обновление...", "green"))
-	print("")
-	sleep(1.1)
-	os.system("clear")
-	while True:
-		Banner()
-		osnova()
-elif numb == "4" or numb == "Ddos For Wi-Fi":
+elif numb == "3" or numb == "Ddos For Wi-Fi":
 	print("")
 	print(colored("В разработке", "green"))
 	print("")
