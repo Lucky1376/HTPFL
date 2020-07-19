@@ -8,14 +8,15 @@ from random import choice
 #Баннер
 os.system("clear")
 def Banner():
-	nt = (colored("HACK THE PANEL FROM LUCKY", "red"))
-	r1 = (colored("     ###", "yellow"))
-	r2 = (colored("###", "yellow"))
-	print("")
-	print(colored("     #################################", "yellow"))
-	print(r1,nt,r2)
-	print(colored("     #################################", "yellow"))
-	print(colored("                For Android", "green"))
+	color = ["red", "blue", "yellow", "green", "cyan", "magenta"]
+	color2 = choice(color)
+	Banner = '''  _    _ _______ _____  ______ _
+ | |  | |__   __|  __ \|  ____| |
+ | |__| |  | |  | |__) | |__  | |
+ |  __  |  | |  |  ___/|  __| | |
+ | |  | |  | |  | |    | |    | |____
+ |_|  |_|  |_|  |_|    |_|    |______| '''
+	print(colored(Banner, color2))
 	print("")
 	ist = (colored("[1]", "red"))
 	ist3 = (colored("Sms Bomber", "green"))
@@ -201,11 +202,14 @@ def  osnova():
 		print("")
 		print(colored(by2, "green"))
 		print("")
+		os.system("cd && ls")
 		sys.exit(0)
 	elif numb != "1" or numb != "2" or numb != "99":
+		os.system("clear")
 		print("")
 		print(colored("ERROR", "red"))
 		print("")
+		os.system("cd && ls")
 		sys.exit(0)
 
 def RVpn():
@@ -363,9 +367,12 @@ elif numb == "0" or numb == "Выход":
 	print("")
 	print(colored(by2, "green"))
 	print("")
+	os.system("cd && ls")
 	sys.exit(0)
 elif numb != "1" or numb != "2" or numb != "99":
+	os.system("clear")
 	print("")
 	print(colored("ERROR", "red"))
 	print("")
+	os.system("cd && ls")
 	sys.exit(0)
