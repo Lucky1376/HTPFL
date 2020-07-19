@@ -202,14 +202,12 @@ def  osnova():
 		print("")
 		print(colored(by2, "green"))
 		print("")
-		os.system("cd && ls")
 		sys.exit(0)
 	elif numb != "1" or numb != "2" or numb != "99":
 		os.system("clear")
 		print("")
 		print(colored("ERROR", "red"))
 		print("")
-		os.system("cd && ls")
 		sys.exit(0)
 
 def RVpn():
@@ -367,12 +365,10 @@ elif numb == "0" or numb == "Выход":
 	print("")
 	print(colored(by2, "green"))
 	print("")
-	os.system("cd && ls")
 	sys.exit(0)
 elif numb != "1" or numb != "2" or numb != "99":
 	os.system("clear")
 	print("")
 	print(colored("ERROR", "red"))
 	print("")
-	os.system("cd && ls")
 	sys.exit(0)
