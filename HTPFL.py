@@ -18,9 +18,30 @@ def Banner():
  |_|  |_|  |_|  |_|    |_|    |______| '''
 	print(colored(Banner, color2))
 	print("")
+	#---
+	color3 = choice(color)
+	color4 = choice(color)
+	color5 = choice(color)
+	color6 = choice(color)
+	color7 = choice(color)
+	color8 = choice(color)
+	color9 = choice(color)
+	color10 = choice(color)
+	color11 = choice(color)
+	
+	A1 = colored("S", color3)
+	A2 = colored("m", color4)
+	A3 = colored("s", color5)
+	A4 = colored("B", color6)
+	A5 = colored("o", color7)
+	A6 = colored("m", color8)
+	A7 = colored("b", color9)
+	A8 = colored("e", color10)
+	A9 = colored("r", color11)
+	
 	ist = (colored("[1]", "red"))
 	ist3 = (colored("Sms Bomber", "green"))
-	print(ist, ist3)
+	print(ist, A1 + A2 + A3, A4 + A5 + A6 + A7 + A8 + A9)
 	print("")
 	fah = (colored("[2]", "red"))
 	fah2 = (colored("VPN For Termux", "blue"))
@@ -30,6 +51,10 @@ def Banner():
 	psh2 = colored("DDOS", "magenta")
 	psh3 = colored("For Wi-Fi", "cyan")
 	print(psh, psh2, psh3)
+	print("")
+	url = colored("[4]", "red")
+	url2 = colored("UrlPhish", "yellow")
+	print(url, url2)
 	print("")
 	ksy = colored("[99]", "red")
 	ksy2 = colored("О Программе", "cyan")
@@ -105,6 +130,9 @@ def  osnova():
 		print("")
 		print(grf, grf3)
 		print(grf2, grf4)
+		un = (colored("remove", "magenta"))
+		un2 = (colored("[3]", "cyan"))
+		print(un2, un)
 		print("")
 		print("")
 		jsh = (colored("[0]", "red"))
@@ -117,20 +145,31 @@ def  osnova():
 			print(colored("После первой установки, устанавливать еще раз не нужно", "cyan"))
 			print("")
 			sleep(3)
-			os.system("pkg install tor")
+			os.system("pkg install tor -y")
 			print("")
 			print(colored("Complete!", "green"))
 			print("")
+			sleep(1.1)
 			while True:
 				RVpn()
 		elif vpn == "2" or vpn == "start":
 			print("")
-			print(colored("Запуск VPN начнётся через 12с после выбора пункта", "green"))
+			print(colored("Запуск VPN начнётся через 12с 	после выбора пункта", "green"))
 			print("")
 			print(colored("Когда на экране у опредленной строки 'Bootstrapped' будет значение 100%, тогда можно будет использовать другие утилиты, обязательно в новой сессии, для того чтобы остановить введите 'Ctrl + C", "yellow"))
 			print("")
 			sleep(12)
 			os.system("tor")
+		elif vpn == "3" or vpn == "remove":
+			sleep(2)
+			print("")
+			os.system("pkg uninstall tor -y")
+			print("")
+			print(colored("Deletion Completed!", "green"))
+			print("")
+			sleep(1.1)
+			while True:
+				RVpn()
 		elif vpn == "0" or vpn == "Назад":
 			while True:
 				os.system("clear")
@@ -145,6 +184,25 @@ def  osnova():
 		while True:
 			Banner()
 			osnova()
+	elif numb == "4" or numb == "UrlPhish":
+		print("")
+		ahg = colored("[1]", "green")
+		ahg2 = colored("start", "green")
+		ahg3 = colored("[0] Назад", "red")
+		print(ahg, ahg2)
+		print("")
+		print("")
+		print(ahg3)
+		print("")
+		bro = input(colored(" —>> ", "red"))
+		if bro == "1" or bro == "start":
+			os.system("clear && python3 u.py")
+			sleep(0.1)
+			sys.exit(0)
+		else:
+			while True:
+				Banner()
+				osnova()
 	elif numb == "Upd" or numb == "upd" or numb == "Обновить":
 		print("")
 		upds = colored("[1]", "cyan")
@@ -214,6 +272,9 @@ def RVpn():
 	print("")
 	print(grf, grf3)
 	print(grf2, grf4)
+	un = (colored("remove", "magenta"))
+	un2 = (colored("[3]", "cyan"))
+	print(un2, un)
 	print("")
 	print("")
 	jsh = (colored("[0]", "red"))
@@ -226,10 +287,13 @@ def RVpn():
 		print(colored("После первой установки, устанавливать еще раз не нужно", "cyan"))
 		print("")
 		sleep(3)
-		os.system("pkg install tor")
+		os.system("pkg install tor -y")
 		print("")
 		print(colored("Complete!", "green"))
 		print("")
+		sleep(1.1)
+		while True:
+			RVpn()
 	elif vpn == "2" or vpn == "start":
 		print("")
 		print(colored("Запуск VPN начнётся через 12с после выбора пункта", "green"))
@@ -238,6 +302,16 @@ def RVpn():
 		print("")
 		sleep(12)
 		os.system("tor")
+	elif vpn == "3" or vpn == "remove":
+		sleep(2)
+		print("")
+		os.system("pkg uninstall tor -y")
+		print("")
+		print(colored("Deletion Completed!", "green"))
+		print("")
+		sleep(1.1)
+		while True:
+			RVpn()
 	elif vpn == "0" or vpn == "Назад":
 		while True:
 			os.system("clear")
@@ -304,6 +378,26 @@ elif numb == "3" or numb == "Ddos For Wi-Fi":
 	while True:
 		Banner()
 		osnova()
+elif numb == "4" or numb == "UrlPhish":
+	print("")
+	ahg = colored("[1]", "green")	
+	ahg2 = colored("start", "green")
+	ahg3 = colored("[0] Назад", "red")
+	print(ahg, ahg2)
+	print("")
+	print("")
+	print(ahg3)
+	print("")
+	bro = input(colored(" —>> ", "red"))
+	if bro == "1" or bro == "start":
+		os.system("clear && python3 u.py")
+		sleep(0.1)
+		sys.exit(0)
+	else:
+		while True:
+			os.system("clear")
+			Banner()
+			osnova()
 elif numb == "Upd" or numb == "upd" or numb == "Обновить":
 		print("")
 		upds = colored("[1]", "cyan")
