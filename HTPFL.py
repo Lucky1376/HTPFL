@@ -387,35 +387,35 @@ def Bomb():
            sleep(1.15)
            Bomb()
 	elif q == "2" or q == "start":
-        print("")
-        print(colored("Примеры", "green"))
-        print("")
-        #--
-        PHONES = ["79506258294", "79857255263", "79087147393", "79057148241", "78008366273", "78005553535"]
-        RandPHONE = choice(PHONES)
-        ColorPHONE = colored(RandPHONE, "blue")
-        #--
-        Colors = ["white", "yellow", "green", "blue", "cyan", "magenta", "red"]
-        RandColor = choice(Colors)
-        RandNumb = randint(10, 1000)
-        time = colored("", RandColor)
-        #--
-        RandNumb2 = randint(3, 200)
+        	print("")
+        	print(colored("Примеры", "green"))
+        	print("")
+        	#--
+       		PHONES = ["79506258294", "79857255263", "79087147393", "79057148241", "78008366273", "78005553535"]
+        	RandPHONE = choice(PHONES)
+        	ColorPHONE = colored(RandPHONE, "blue")
+        	#--
+        	Colors = ["white", "yellow", "green", "blue", "cyan", "magenta", "red"]
+        	RandColor = choice(Colors)
+        	RandNumb = randint(10, 1000)
+        	time = colored("", RandColor)
+        	#--
+        	RandNumb2 = randint(3, 200)
 
-        print("PHONE -", ColorPHONE)
-        print("Время -", RandNumb + "сек")
-        print("Мощность - От 3-200")
-        print("")
-        sleep(1.3)
-        PHONE - input(colored(" PHONE >> ", "red"))
-        time - input(colored(" Время >> ", "red"))
-        threads - input(colored(" Мощность >> ", "red"))
-        print("")
-        print(colored("Хотите начать спам через опредленое время или сразу?", "yellow"))
-        print(colored("Если через определнное время, укажите его в секундах", "green"))
-        print(colored("Если сразу напишите 0", "green"))
-        print("")
-        okey = input(colored(" —>> ", "red"))
+        	print("PHONE -", ColorPHONE)
+        	print("Время -", RandNumb + "сек")
+        	print("Мощность - От 3-200")
+        	print("")
+        	sleep(1.3)
+        	PHONE - input(colored(" PHONE >> ", "red"))
+        	time - input(colored(" Время >> ", "red"))
+        	threads - input(colored(" Мощность >> ", "red"))
+        	print("")
+        	print(colored("Хотите начать спам через опредленое время или сразу?", "yellow"))
+        	print(colored("Если через определнное время, укажите его в секундах", "green"))
+        	print(colored("Если сразу напишите 0", "green"))
+        	print("")
+        	okey = input(colored(" —>> ", "red"))
         if okey == "0":
             os.system("cd % && python impulse.py --target "+PHONE+" --method SMS --time "+time+" --threads "+threads)
         elif okey < "0":
