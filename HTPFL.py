@@ -367,7 +367,7 @@ def Bomb():
 
         print("PHONE -", ColorPHONE)
         print("Время -", RandNumb + "сек")
-        print("Мощность - От 3-200)
+        print("Мощность - От 3-200")
         print("")
         sleep(1.3)
         PHONE - input(colored(" PHONE >> ", "red"))
