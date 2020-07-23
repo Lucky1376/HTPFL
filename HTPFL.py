@@ -147,24 +147,22 @@ def  osnova():
 			print("")
 			okey = input(colored(" —>> ", "red"))
 			if okey == "0":
-				os.system(
-					"cd % && python impulse.py --target " + PHONE + " --method SMS --time " + time + " --threads " + threads)
+				os.system("cd % && python impulse.py --target "+PHONE+" --method SMS --time "+ ime +" --threads "+threads)
 			elif okey < "0":
 				print("")
-			bol = colored("БОЛЬНОЙ??", "red")
-			print("Ты " + bol)
-			print("")
-			sleep(1.1)
-			sys.exit(0)
+				bol = colored("БОЛЬНОЙ??", "red")
+				print("Ты " + bol)
+				print("")
+				sleep(1.1)
+				sys.exit(0)
 			else:
-			sleep(okey)
-			os.system(
-				"cd % && python impulse.py --target " + PHONE + " --method SMS --time " + time + " --threads " + threads)
+				sleep(okey)
+				os.system("cd % && python impulse.py --target "+PHONE+" --method SMS --time "+ ime +" --threads "+threads)
 			else:
-			os.system("clear")
-			while True:
-				Banner()
-				osnova()
+				os.system("clear")
+				while True:
+					Banner()
+					osnova()
 	elif numb == "2" or numb == "VPN For Termux":
 		print("")
 		print(grf, grf3)
