@@ -155,7 +155,7 @@ def  osnova():
 				print("")
 				sleep(1.1)
 				sys.exit(0)
-			else:
+			elif okey > "0":
 				sleep(okey)
 				os.system("cd % && python impulse.py --target "+PHONE+" --method SMS --time "+ ime +" --threads "+threads)
 			else:
