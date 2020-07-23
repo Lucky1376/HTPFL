@@ -349,7 +349,7 @@ def Bomb():
         while True:
            sleep(1.15)
            Bomb()
-    elif q == "2" or q == "start"
+    elif q == "2" or q == "start":
         print("")
         print(colored("Примеры", "green"))
         print("")
