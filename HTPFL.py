@@ -385,6 +385,7 @@ def osnova():
             print("")
             sleep(1.45)
             os.system("cd && rm -rf HTPFL")
+            os.system("clear")
             exit()
             print("")
         elif act == "3" or act == "Update all modules":
@@ -728,6 +729,7 @@ def act():
         print("")
         sleep(1.45)
         os.system("cd && rm -rf HTPFL")
+        os.system("clear")
         exit()
         print("")
     elif act == "3" or act == "Update all modules":
