@@ -287,7 +287,7 @@ def osnova():
             an = ('5', '4', '3', '2', '1')
             ian = 0
             while True:
-                print('Loading - ', colored(an[ian % len(an)], 'green'), sep='', end='\r')
+                print('start через - ', colored(an[ian % len(an)], 'green'), sep='', end='\r')
                 sleep(1)
                 ian += 1
                 if ian * 0.1 > 0.45: break
@@ -612,7 +612,7 @@ def ddos():
         an = ('5', '4', '3', '2', '1')
         ian = 0
         while True:
-            print('Loading - ', colored(an[ian % len(an)], 'green'), sep='', end='\r')
+            print('start через - ', colored(an[ian % len(an)], 'green'), sep='', end='\r')
             sleep(1)
             ian += 1
             if ian * 0.1 > 0.45: break
