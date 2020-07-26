@@ -59,7 +59,7 @@ def Banner():
     print(url, url2)
     print("")
     ngr = colored("[5]", "red")
-    ngr = colored("ngrok", "green")
+    ngr2 = colored("ngrok", "green")
     print(ngr, ngr2)
     print("")
     ksy = colored("[99]", "red")
