@@ -344,6 +344,8 @@ def osnova():
             akt3 = colored("reconnecting", "red")
             print(akt, akt3, akt2)
             print("")
+            print("Вы будете перенаправлены на главную панель через 10 секунд")
+            sleep(10)
         elif ngrok == "2" or ngrok == "start":
             print("")
             locport = input(colored("Укажите локальный порт ", "blue"))
@@ -686,6 +688,8 @@ def ngrok():
         akt3 = colored("reconnecting", "red")
         print(akt, akt3, akt2)
         print("")
+        print("Вы будете перенаправлены на главную панель через 10 секунд")
+        sleep(10)
     elif ngrok == "2" or ngrok == "start":
         print("")
         locport = input(colored("Укажите локальный порт ", "blue"))
