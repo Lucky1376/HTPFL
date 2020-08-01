@@ -493,7 +493,7 @@ def kfg():
         print("")
     elif kfgi == "1" or kfgi == "download modules for KingFish3":
         print("")
-        os.system("pip install prettytable && pip install multiprocessing")
+        os.system("pip install prettytable && pip install colorama && pkg install php")
         print("")
         print(colored("Complete!", "green"))
         print("")
