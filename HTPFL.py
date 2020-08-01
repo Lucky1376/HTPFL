@@ -442,7 +442,7 @@ def act():
             print("")
             sleep(1.45)
             os.system(
-                "pkg update -y && pkg upgrade -y && pkg update git -y && pkg update python && pip install --upgrade pip && pip install --upgrade colored && pip install --upgrade requests && pip install --upgrade argparse && pip install --upgrade colorama && pip install --upgrade termcolor && pkg update python2 && pip install --upgrade wget && pip install --upgrade humanfriendly && pip install --upgrade b0mb3r && pip install --upgarde multiprocessing && pip install --upgarde prettytable")
+                "pkg update -y && pkg upgrade -y && pkg update git -y && pkg update python && pip install --upgrade pip && pip install --upgrade colored && pip install --upgrade requests && pip install --upgrade argparse && pip install --upgrade colorama && pip install --upgrade termcolor && pkg update python2 && pip install --upgrade wget && pip install --upgrade humanfriendly && pip install --upgrade b0mb3r && pip install --upgrade multiprocessing && pip install --upgrade prettytable")
             print("")
             print(colored("Complete!", "green"))
             print("")
