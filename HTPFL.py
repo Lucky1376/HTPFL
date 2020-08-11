@@ -220,13 +220,13 @@ def Bomb():
 						time = input(colored("Время Спама: ", "blue"))
 						times = int(times)
 						if times <= 0:
-							os.system("cd % && python impulse.py --target " + number + " --method SMS --time " + time + " --threads 50")
+							os.system("cd % && python impulse.py --target " + number + " --method SMS --time " + time + " --threads 200")
 						elif times > 0:
 							print("")
 							print(colored("Ожидайте...", "green"))
 							print("")
 							sleep(times)
-							os.system("cd % && python impulse.py --target " + number + " --method SMS --time " + time + " --threads 50")
+							os.system("cd % && python impulse.py --target " + number + " --method SMS --time " + time + " --threads 200")
 					else:
 						print("")
 						print(colored("А, ясно, ты просто пидор", "red"))
