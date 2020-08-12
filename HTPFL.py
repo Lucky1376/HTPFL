@@ -107,7 +107,7 @@ def osnova():
 
 
 def Bomb():
-	antispam = ["9502135308", "89502135308", "79503366421", "89503366421"]
+	antispam = ["79502135308", "89502135308", "79503366421", "89503366421"]
 	print("")
 	print(colored("⟨Starting Bombers⟩", "blue"))
 	imp = colored("[1]", "cyan")
