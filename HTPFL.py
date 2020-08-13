@@ -358,10 +358,10 @@ def ngrok():
     print("")
     ngrokr = input(colored(" —>> ", "red"))
     if ngrokr == "1" or ngrok == "Активировать ngrok":
+        os.system("chmod +x ngrok")
         print("")
         token = input(colored("Введите ваш Токен ", "blue"))
         os.system("./ngrok authtoken " + token)
-        os.system("chmod +x ngrok")
         print("")
         akt = colored("Токен активирован! Если при запуске ngrok у вас будет постоянный", "magenta")
         akt2 = colored("то включите мобильную точку доступа", "magenta")
