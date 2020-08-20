@@ -592,7 +592,7 @@ def programm():
     name = colored("Lucky", "red")
     raz = colored("Разработчик -", "cyan")
     print(raz, name)
-    vr = colored("0.8.0", "blue")
+    vr = colored("0.9.0", "blue")
     ver = colored("Version -", "cyan")
     print(ver, vr)
     lang = colored("Python", "green")
