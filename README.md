@@ -6,7 +6,7 @@ HTPFL - Hack The Panel From Lucky
 2) pkg install git -y
 3) pkg install python -y
 4) pip install --upgrade pip
-5) pip install colored, requestsz argparse, colorama, termcolor
+5) pip install colored, requests, argparse, colorama, termcolor
 6) git clone https://github.com/Lucky1376/HTPFL
 7) cd HTPFL
 8) python HTPFL.py
