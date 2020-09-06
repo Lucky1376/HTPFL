@@ -3,7 +3,6 @@ from termcolor import colored
 import os
 import sys
 from time import sleep
-import Eml
 from time import sleep, strftime
 from random import choice, randint
 import requests
