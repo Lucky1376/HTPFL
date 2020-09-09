@@ -12,7 +12,7 @@ HTPFL - Hack The Panel From Lucky
 8) python HTPFL.py
 
 # Any questions? Write to me!
-Telegram - https://t.me/Lucky1376
+Telegram - https://t.me/HTPFLcom
 VK - https://m.vk.com/id554311036
 Email - kkovalevskij8@gmail.com
 
